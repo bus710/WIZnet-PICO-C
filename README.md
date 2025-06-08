@@ -1,3 +1,37 @@
+# A fork of Wiznet's example repo.
+
+<br/>
+
+Continued from:
+- https://github.com/bus710/pico?tab=readme-ov-file#w55rp20-w5500--rp2040
+
+<br/>
+
+To build the wiznet exmaples:
+```sh
+# Clone and enter:
+$ git clone --recurse-submodules \
+    https://github.com/bus710/WIZnet-PICO-C.git
+$ cd WIZnet-PICO-C
+
+# Update the root CMake to specify the target board:
+$ nv CMakeLists.txt
+
+# Initial build for the entire project
+$ mkdir build
+$ cd build
+$ cmake .. -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+
+# Per example build
+$ cd ..
+$ cd build/examples/network_install # for example
+$ make -j$(nproc)
+```
+
+<br/>
+<br/>
+<br/>
+
 # Getting Started with Ethernet Examples
 
 These sections will guide you through a series of steps from configuring development environment to running ethernet examples using the **WIZnet's ethernet products**.
