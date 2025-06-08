@@ -146,6 +146,7 @@ add_compile_options(
 
 # Hardware-specific examples in subdirectories:
 add_subdirectory(examples)
+add_subdirectory(examples2)
 
 # Add libraries in subdirectories
 add_subdirectory(${CMAKE_SOURCE_DIR}/libraries)

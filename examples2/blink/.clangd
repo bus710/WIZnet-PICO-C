@@ -1,0 +1,4 @@
+CompileFlags:
+  Add: [
+    -I/home/bus710/pico/pico-sdk/src/host/pico_stdio/include/pico,
+    -I/usr/lib/arm-none-eabi/include]
